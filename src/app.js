@@ -27,7 +27,7 @@ import dashboardRouter from "./routes/dashboard.routes.js";
 import healthcheckRouter from "./routes/healthcheck.routes.js";
 import aboutRouter from "./routes/about.routes.js";
 
-app.get("/", (req, res) => res.send("Backend of YouTube+Twitter by yashpz"));
+app.get("/", (req, res) => res.send("Backend of YouTube+Twitter by rishov"));
 
 // http://localhost:3000/api/v1/healthcheck/routes
 app.use("/api/v1/healthcheck", healthcheckRouter);
