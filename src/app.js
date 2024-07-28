@@ -27,7 +27,7 @@ import dashboardRouter from "./routes/dashboard.routes.js";
 import healthcheckRouter from "./routes/healthcheck.routes.js";
 import aboutRouter from "./routes/about.routes.js";
 
-app.get("/", (req, res) => res.send("Backend of XTube by rishov"));
+app.get("/", (req, res) => res.send("XTube server"));
 
 // http://localhost:3000/api/v1/healthcheck/routes
 app.use("/api/v1/healthcheck", healthcheckRouter);
