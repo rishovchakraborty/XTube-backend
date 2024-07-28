@@ -15,6 +15,15 @@ app.get('/api/v1/test', (req, res) => {
     res.json({ message: 'Test endpoint is working!' });
   });
 
+  const corsOptions = {
+    origin: 'http://localhost:5173',
+    credentials: true, // Allow credentials (cookies, authorization headers, etc.)
+  };
+  
+  app.use(cors(corsOptions));
+  
+
+
 //import Routes
 import userRouter from "./routes/user.routes.js";
 import videoRouter from "./routes/video.routes.js";
